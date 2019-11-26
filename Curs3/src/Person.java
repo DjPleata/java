@@ -4,6 +4,7 @@ public class Person {
     private int height;
     private int stamina;
 
+
     public String getName() {
         return name;
     }

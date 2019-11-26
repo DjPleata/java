@@ -6,6 +6,9 @@ public class Program {
     public static void main(String[] args) {
         Person alex = new Person("Alexandru" , 20, 175 , 10);
 
+        Student Andrei= new Student();
+
+
         System.out.println(alex.getName() + " are energia " + alex.getAge() + " de ani");
 
         alex.run();
@@ -21,7 +24,7 @@ public class Program {
 
         Dog lessie = new Dog();
         lessie.size = 20;
-        lessie.bark();
+
     }
 
 

@@ -1,7 +1,7 @@
 public class Dog {
     int size;
 
-    public void bark() {
+    public void bark(int times) {
         if (size > 60){
             bark(times, "Woff!" );
         }
