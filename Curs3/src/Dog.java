@@ -3,13 +3,19 @@ public class Dog {
 
     public void bark() {
         if (size > 60){
-            System.out.println("Woof! Woff!");
+            bark(times, "Woff!" );
         }
         else if (size > 14) {
-            System.out.println("Roff! Roff!");
+            bark(times, "Roff!");
         }
         else {
-            System.out.println("Yip! Yip!");
+            bark(times, "Yip!");
         }
             }
+
+    private void bark(int times, String sound) {
+        for( int i=0; i<times; i++){
+        System.out.println(sound);
+        }
+    }
 }
