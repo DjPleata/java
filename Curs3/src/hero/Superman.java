@@ -6,20 +6,25 @@ public class Superman extends hero {
     }
 
     @Override
-    public void fierPrimary() {
+    public void fierPrimary(hero hero) {
         mana -=10;
         hp++;
+        hero.reciveHit(20);
     }
 
     @Override
-    public void fierSecundary() {
+    public void fierSecundary(hero hero) {
         mana -=30;
         hp +=3;
+        hero.reciveHit(60);
 
     }
 
     @Override
-    public void reciveHit() {
-        hp--;
+    public void reciveHit(int power) {
+        if(power < 25){
+            mana ++;
+        } else
+        hp-= power/3;
     }
 }

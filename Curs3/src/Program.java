@@ -5,6 +5,11 @@ import java.rmi.AlreadyBoundException;
 
 public class Program {
     public static void main(String[] args) {
+
+        Day.
+
+
+
         Person alex = new Person("Alexandru" , 20, 175 , 10);
 
         Student Andrei= new Student("Andrei", 25,180 ,100 ,"A");
