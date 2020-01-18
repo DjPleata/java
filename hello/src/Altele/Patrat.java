@@ -1,3 +1,5 @@
+package Altele;
+
 public class Patrat {
     public static void main(String[] args) {
         int i = 1, j = 0;

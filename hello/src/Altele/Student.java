@@ -1,3 +1,5 @@
+package Altele;
+
 public class Student extends Person {
     private String classGroup;
 
@@ -13,7 +15,7 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "Altele.Student{" +
                 "classGroup='" + classGroup + '\'' +
                 ", name='" + name + '\'' +
                 ", age=" + age +
