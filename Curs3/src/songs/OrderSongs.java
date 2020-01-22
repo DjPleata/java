@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Optional;
 import java.util.TreeSet;
 
 public class OrderSongs {
@@ -22,8 +23,17 @@ public class OrderSongs {
             System.out.println(songs.size());
             System.out.println(songs);
 
+            Optional<Integer> o = songs.stream().filter(Song -> Song.charAt(0) =='Z' )
+                   .map( Song-> Song.length())
+                   .sorted()
+                   .findFirst();
+            System.out.println(o.get());
+
+
+
 //            Collections.sort(songs);
 //           System.out.println(songs);
+
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
